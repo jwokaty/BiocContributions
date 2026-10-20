@@ -27,7 +27,8 @@ BIOC_ORG_TOKEN = os.environ.get("BIOC_ORG_TOKEN") or GITHUB_TOKEN
 REPO_FULL = os.environ["GITHUB_REPOSITORY"]
 ORG_NAME = os.environ.get("ORG_NAME", "Bioconductor")
 TEAM = os.environ["TEAM_SLUG"]
-HOSTING_ORG = os.environ.get("BIOC_PKG_HOSTING_ORG", "bioconductor-source")
+#HOSTING_ORG = os.environ.get("BIOC_PKG_HOSTING_ORG", "bioconductor-source")
+HOSTING_ORG = os.environ.get("BIOC_PKG_HOSTING_ORG", "jwokaty")
 HOSTING_TOKEN = os.environ.get("BIOC_PKG_HOSTING_TOKEN")
 ACCEPT_LABELS = [
     x.strip() for x in os.environ.get("ACCEPT_LABELS", "package accepted").split(",") if x.strip()
